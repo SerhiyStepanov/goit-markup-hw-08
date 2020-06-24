@@ -1,5 +1,7 @@
 .foot .center {
-  margin-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 
   @media screen and (min-width: 768px) {
     margin-left: 165px;
@@ -53,8 +55,11 @@
   line-height: 1.1;
   letter-spacing: 0.03em;
   color: $primary-white-color;
-  text-align: center;
   text-transform: uppercase;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .foot-seti .icon-instagram {
