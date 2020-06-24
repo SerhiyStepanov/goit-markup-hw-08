@@ -1,6 +1,10 @@
 .foot .left {
   margin-bottom: 60px;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+  }
 }
 
 .page-footer .logo {

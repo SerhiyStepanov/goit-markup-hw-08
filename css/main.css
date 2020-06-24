@@ -419,9 +419,28 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .foot .left {
   margin-bottom: 60px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .foot .left {
+    margin-right: auto;
+  }
 }
 
 .page-footer .logo {
@@ -455,6 +474,12 @@ img {
 
 .foot .center {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .foot .center {
+    margin-left: 165px;
+  }
 }
 
 .foot-seti {
@@ -540,10 +565,23 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .foot .right {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
 .subscribe-input {
   padding-left: 16px;
   padding-right: 16px;
-  margin-bottom: 20px;
   width: 100%;
   height: 50px;
   font-size: 16px;
@@ -554,6 +592,24 @@ img {
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-input {
+    min-width: 450px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe-input {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-input {
+    min-width: 358px;
+  }
 }
 
 .button-secondary {
@@ -580,6 +636,12 @@ img {
   color: #fff;
   background-color: #2196f3;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .button-secondary {
+    margin-left: 12px;
+  }
 }
 
 .icon-iconsend {
