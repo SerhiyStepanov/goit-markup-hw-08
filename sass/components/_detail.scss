@@ -6,14 +6,32 @@
 
 .detail {
   padding-left: 0;
+  margin: -15px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .detail > .item {
   display: block;
+  margin: 15px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    width: calc((100% - 8 * 15px) / 4);
+  }
 }
 
 .detail .item:not(:last-child) {
-  margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
 .box-detail {
