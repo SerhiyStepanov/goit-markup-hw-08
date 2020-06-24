@@ -1,0 +1,70 @@
+.foot .center {
+  margin-bottom: 60px;
+}
+
+.foot-seti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
+.foot-seti .list + .list {
+  display: block;
+  margin-left: 10px;
+}
+
+.foot-seti > .list {
+  display: flex;
+}
+
+.foot-seti .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: $background-first;
+
+  transition: background-color 250ms $cubic, fill 250 $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $acent-color;
+  }
+}
+
+.page-footer .text {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  color: $primary-white-color;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.foot-seti .icon-instagram {
+  width: 20px;
+  height: 20px;
+}
+
+.foot-seti .icon-twitter {
+  width: 20px;
+  height: 16px;
+}
+
+.foot-seti .icon-facebook {
+  width: 10px;
+  height: 20px;
+}
+
+.foot-seti .icon-linkedin {
+  width: 20px;
+  height: 20px;
+}
