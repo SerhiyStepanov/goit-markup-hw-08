@@ -40,7 +40,6 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -164,7 +163,6 @@
   @media screen and (max-width: 1200px) {
     font-size: 12px;
     line-height: 1.1px;
-    margin-left: auto;
   }
 }
 
@@ -180,6 +178,7 @@
   left: 0px;
   width: 16px;
   height: 15px;
+  margin-right: 7px;
   transform: translateY(-50%);
 
   .checkbox:checked ~ & {
