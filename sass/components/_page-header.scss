@@ -1,5 +1,10 @@
 .page-header {
   background-color: $background-first;
+
+  @media screen and (max-width: 767px) {
+    position: relative;
+    height: 60px;
+  }
 }
 
 .container {

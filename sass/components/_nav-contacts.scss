@@ -1,3 +1,12 @@
+.container.header {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    height: 60px;
+  }
+}
+
 .menu-button {
   display: flex;
   margin-left: auto;
@@ -27,16 +36,31 @@
     fill: $acent-color;
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
 .menu-container {
-  display: block;
-  text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $primary-white-color;
+    z-index: 1;
+    border-top: 1px solid #ececec;
+  }
+
+  &.is-open {
+    display: block;
+  }
 }
 
 .site-nav {
@@ -45,6 +69,10 @@
   .list {
     display: block;
     position: relative;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -93,8 +121,11 @@
 .page-header .contact {
   display: block;
   justify-content: center;
-  padding-top: 60px;
   padding-left: 0;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+  }
 }
 
 .icon-post {

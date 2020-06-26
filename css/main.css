@@ -88,6 +88,13 @@ img {
   background-color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .page-header {
+    position: relative;
+    height: 60px;
+  }
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -107,6 +114,21 @@ img {
 
 .logo .top-studio {
   color: #212121;
+}
+
+.container.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .container.header {
+    height: 60px;
+  }
 }
 
 .menu-button {
@@ -140,17 +162,34 @@ img {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
 }
 
 .menu-container {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fff;
+    z-index: 1;
+    border-top: 1px solid #ececec;
+  }
+}
+
+.menu-container.is-open {
   display: block;
-  text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .site-nav {
@@ -160,6 +199,12 @@ img {
 .site-nav .list {
   display: block;
   position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav .list {
+    margin-bottom: 40px;
+  }
 }
 
 .site-nav .link {
@@ -211,8 +256,13 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 60px;
   padding-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header .contact {
+    padding-top: 60px;
+  }
 }
 
 .icon-post {
