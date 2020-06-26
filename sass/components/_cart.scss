@@ -28,15 +28,15 @@
 }
 
 .cart .link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .product {
   position: relative;
   display: block;
   width: 100%;
-  height: 100%;
-
   overflow: hidden;
 
   &:before {
@@ -81,6 +81,7 @@
 }
 
 .cart .content {
+  flex-grow: 1;
   position: relative;
   padding-top: 20px;
   padding-right: 24px;
@@ -109,10 +110,6 @@
 .cart .link:hover .content::after,
 .cart .linc:focus .content::after {
   opacity: 1;
-}
-
-.cart .element:nth-child(3n) {
-  margin-right: 0;
 }
 
 .section-portfolio .section-title {
