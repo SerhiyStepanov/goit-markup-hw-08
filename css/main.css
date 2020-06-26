@@ -119,6 +119,10 @@ img {
   background-color: transparent;
 }
 
+.menu-button:hover, .menu-button:focus {
+  fill: #2196f3;
+}
+
 .menu-button .icon-close {
   display: none;
 }
@@ -129,6 +133,11 @@ img {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-button.is-open:hover .icon-close,
+.menu-button.is-open:focus .icon-close {
+  fill: #2196f3;
 }
 
 .hero {

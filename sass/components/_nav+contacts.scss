@@ -5,6 +5,11 @@
   border: none;
   background-color: transparent;
 
+  &:hover,
+  &:focus {
+    fill: $acent-color;
+  }
+
   & .icon-close {
     display: none;
   }
@@ -15,5 +20,10 @@
 
   &.is-open .icon-menu {
     display: none;
+  }
+
+  &.is-open:hover .icon-close,
+  &.is-open:focus .icon-close {
+    fill: $acent-color;
   }
 }
