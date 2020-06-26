@@ -357,7 +357,12 @@ img {
 
 .checkbox-label {
   position: relative;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 30px;
   cursor: pointer;
 }
@@ -372,7 +377,7 @@ img {
 .checkbox:checked {
   position: absolute;
   top: 50%;
-  left: 0px;
+  left: 0;
   width: 16px;
   height: 15px;
   -webkit-transform: translateY(-50%);
@@ -385,21 +390,44 @@ img {
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .checkbox:checked {
+    left: 12px;
+  }
+}
+
 .check-text {
+  display: block;
   color: #757575;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .check-text {
     font-size: 12px;
     line-height: 1.1px;
+    margin-left: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.7px;
+    margin-left: 36px;
   }
 }
 
 .check-link > a {
-  display: inline-block;
+  display: block;
   padding-left: 2px;
   color: #2196f3;
+}
+
+@media screen and (max-width: 1199px) {
+  .check-link > a {
+    font-size: 12px;
+    line-height: 1.1px;
+  }
 }
 
 .check-icon {
@@ -408,13 +436,18 @@ img {
   left: 0px;
   width: 16px;
   height: 15px;
-  margin-right: 7px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
 .checkbox:checked ~ .check-icon {
   fill: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .check-icon {
+    left: 12px;
+  }
 }
 
 .modal .close {
