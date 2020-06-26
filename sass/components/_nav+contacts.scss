@@ -26,4 +26,91 @@
   &.is-open:focus .icon-close {
     fill: $acent-color;
   }
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+.site-nav {
+  padding-left: 0;
+
+  .list {
+    position: relative;
+  }
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: ;
+  padding-bottom: ;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $title-text-color;
+
+  transition: color 250ms $cubic;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  &:hover,
+  &:focus {
+    color: $acent-color;
+  }
+}
+
+.site-nav .link.current {
+  color: $acent-color;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $acent-color;
+    border-radius: 2px;
+  }
+}
+
+.page-header .contact {
+  display: inline-flex;
+  margin-left: auto;
+  padding-left: 0;
+}
+
+.icon-post {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+}
+
+.icon-phone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.contact .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: $primary-text-coor;
+  fill: $primary-text-coor;
+
+  transition: color 250ms $cubic, fill 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $acent-color;
+    fill: $acent-color;
+  }
 }
