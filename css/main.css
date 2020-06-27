@@ -141,10 +141,6 @@ img {
   background-color: transparent;
 }
 
-.menu-button:hover, .menu-button:focus {
-  fill: #2196f3;
-}
-
 .menu-button .icon-close {
   display: none;
 }
@@ -157,15 +153,13 @@ img {
   display: none;
 }
 
-.menu-button.is-open:hover .icon-close,
-.menu-button.is-open:focus .icon-close {
+.menu-button:hover, .menu-button:focus {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
-  .menu-button {
-    display: none;
-  }
+.menu-button.is-open:hover .icon-close,
+.menu-button.is-open:focus .icon-close {
+  fill: #2196f3;
 }
 
 .menu-container {

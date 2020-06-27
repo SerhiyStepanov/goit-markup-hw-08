@@ -14,11 +14,6 @@
   border: none;
   background-color: transparent;
 
-  &:hover,
-  &:focus {
-    fill: $acent-color;
-  }
-
   & .icon-close {
     display: none;
   }
@@ -31,13 +26,14 @@
     display: none;
   }
 
-  &.is-open:hover .icon-close,
-  &.is-open:focus .icon-close {
+  &:hover,
+  &:focus {
     fill: $acent-color;
   }
 
-  @media screen and (min-width: 768px) {
-    display: none;
+  &.is-open:hover .icon-close,
+  &.is-open:focus .icon-close {
+    fill: $acent-color;
   }
 }
 
