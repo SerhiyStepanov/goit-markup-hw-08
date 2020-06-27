@@ -1,5 +1,5 @@
 .logo {
-  display: block;
+  display: inline-block;
   color: $acent-color;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -11,7 +11,8 @@
   }
 
   @media screen and (min-width: 1200px) {
+    display: inline-block;
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.1;
   }
 }

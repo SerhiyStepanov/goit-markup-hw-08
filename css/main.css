@@ -103,7 +103,7 @@ img {
 }
 
 .logo {
-  display: block;
+  display: inline-block;
   color: #2196f3;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -118,8 +118,9 @@ img {
 
 @media screen and (min-width: 1200px) {
   .logo {
+    display: inline-block;
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.1;
   }
 }
 
@@ -209,6 +210,12 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    width: 100%;
   }
 }
 
@@ -312,9 +319,24 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .page-header .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .contact .list:not(:last-child) {
     margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact .list:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
