@@ -260,7 +260,17 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team">
             <li class="list item-name">
-              <img src="./images/John.jpg" alt="john smith" width="270" />
+              <img
+                srcset="
+                  ./images/Nik-270.jpg 270w,
+                  ./images/Nik-350.jpg 350w,
+                  ./images/Nik-540.jpg 540w,
+                  ./images/Nik-710.jpg 710w
+                "
+                src="./images/Nik-270.jpg"
+                alt="Nik"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"
+              />
               <div class="content">
                 <h3 class="section-title-name">Николай Кучеренко</h3>
                 <p class="section-text">Product Designer</p>
