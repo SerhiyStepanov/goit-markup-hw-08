@@ -69,7 +69,7 @@
     display: block;
     position: relative;
 
-    @media screen and (max-width: 767px) {
+    &:not(:last-child) {
       margin-bottom: 40px;
     }
   }
@@ -123,20 +123,14 @@
   padding-left: 0;
 
   @media screen and (max-width: 767px) {
-    padding-top: 60px;
+    margin-top: 60px;
   }
 }
 
-.icon-post {
-  width: 16px;
-  height: 11px;
-  margin-right: 10px;
-}
-
-.icon-phone {
-  width: 10px;
-  height: 15px;
-  margin-right: 10px;
+.contact .list:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
 }
 
 .contact .link {
@@ -151,13 +145,21 @@
 
   transition: color 250ms $cubic, fill 250ms $cubic;
 
-  @media screen and(max-width:767px) {
-    margin-bottom: 16px;
-  }
-
   &:hover,
   &:focus {
     color: $acent-color;
     fill: $acent-color;
   }
+}
+
+.icon-post {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+}
+
+.icon-phone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
 }
