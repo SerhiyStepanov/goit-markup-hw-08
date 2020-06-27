@@ -921,8 +921,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .team {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
     margin: -15px;
   }
 }

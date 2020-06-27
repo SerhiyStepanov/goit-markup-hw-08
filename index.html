@@ -356,7 +356,17 @@
             </li>
 
             <li class="list item-name">
-              <img src="./images/Robert.jpg" alt="Robert Jakis" width="270" />
+              <img
+                srcset="
+                  ./images/Andrej-270.jpg 270w,
+                  ./images/Andrej-350.jpg 350w,
+                  ./images/Andrej-540.jpg 540w,
+                  ./images/Andrej-710.jpg 710w
+                "
+                src="./images/Andrej-270.jpg"
+                alt="Andrej"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width:480px) 100vw"
+              />
               <div class="content">
                 <h3 class="section-title-name">Андрей Шевченко</h3>
                 <p class="section-text">Marketing</p>
