@@ -164,7 +164,20 @@
             <li class="list element">
               <a class="link" href="">
                 <div class="product">
-                  <img src="./images/img003.jpg" alt="рыба" width="370" />
+                  <img
+                    srcset="
+                      ./images/003-350.jpg 350w,
+                      ./images/003-370.jpg 370w,
+                      ./images/003-450.jpg 450w,
+                      ./images/003-710.jpg 710w,
+                      ./images/003-740.jpg 740w,
+                      ./images/003-900.jpg 900w,
+
+                    "
+                    src="./images/003-350.jpg"
+                    alt="рыба"
+                    sizes=" (min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw "
+                  />
                   <p class="text-hidden">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
