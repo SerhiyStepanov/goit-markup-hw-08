@@ -104,9 +104,16 @@
               <a class="link" href="">
                 <div class="product">
                   <img
-                    src="./images/img001.jpg"
+                    srcset="
+                      ./images/001-350.jpg 350w,
+                      ./images/001-450.jpg 450w,
+                      ./images/001-740.jpg 740w,
+                      ./images/001-900.jpg 900w,
+
+                    "
+                    src="./images/001-350.jpg"
                     alt="наша команда"
-                    width="370"
+                    sizes=" (min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw "
                   />
                   <p class="text-hidden">
                     Технокряк это современная площадка распространения
