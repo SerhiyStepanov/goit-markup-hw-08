@@ -906,6 +906,7 @@ img {
 
 .team {
   padding-left: 0;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -942,6 +943,9 @@ img {
   .item-name {
     width: calc((100% - 8 * 15px) / 4);
     margin: 15px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 
