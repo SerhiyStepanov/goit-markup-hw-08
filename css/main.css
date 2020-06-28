@@ -253,7 +253,7 @@ img {
 }
 
 .site-nav .link {
-  display: block;
+  position: relative;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2;
@@ -284,7 +284,6 @@ img {
 
 .site-nav .link.current::after {
   content: "";
-  display: block;
   position: absolute;
   bottom: 0;
   left: 0;
