@@ -65,6 +65,10 @@
   left: 0;
   padding: 63px 24px;
 
+  @media screen and (max-width: 767px) {
+    padding: 77px 24px;
+  }
+
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
