@@ -691,6 +691,7 @@ img {
 
 .check-text {
   display: block;
+  text-overflow: clip;
   color: #757575;
 }
 
@@ -1672,6 +1673,9 @@ img {
 }
 
 .section-portfolio .section-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;

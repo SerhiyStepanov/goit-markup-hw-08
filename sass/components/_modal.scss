@@ -164,6 +164,7 @@
 
 .check-text {
   display: block;
+  text-overflow: clip;
   color: $primary-text-coor;
 
   @media screen and (max-width: 1199px) {
