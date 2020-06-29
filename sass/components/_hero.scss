@@ -1,34 +1,86 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 100%;
+  height: 400px;
+  margin-left: auto;
   text-align: center;
   display: block;
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  background-repeat: no-repeat;
   background-color: #474858;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url(../images/Hero.jpg);
+    url(../images/Hero-480.jpg);
 
-  & .hero-title {
-    margin-bottom: 30px;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 2dppx),
+    screen and (min-resolution: 192dpi) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../images/Hero-960.jpg);
+  }
 
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $primary-white-color;
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../images/Hero-770.jpg);
 
-    @media screen and (min-width: 1200px) {
-      font-size: 44px;
-      line-height: 1.4;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 2dppx),
+      screen and (min-resolution: 192dpi) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url(../images/Hero-1540.jpg);
     }
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../images/Hero-1600.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 2dppx),
+      screen and (min-resolution: 192dpi) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url(../images/Hero-3200.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+  }
+}
+
+.hero .hero-title {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.4;
   }
 }
 
