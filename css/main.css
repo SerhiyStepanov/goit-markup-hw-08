@@ -658,7 +658,14 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
+  text-align: start;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .checkbox-label {
+    white-space: nowrap;
+  }
 }
 
 .checkbox {
@@ -692,7 +699,6 @@ img {
 
 .check-text {
   display: block;
-  text-overflow: clip;
   color: #757575;
 }
 

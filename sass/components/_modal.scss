@@ -134,7 +134,12 @@
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  text-align: start;
   cursor: pointer;
+
+  @media screen and (max-width: 480px) {
+    white-space: nowrap;
+  }
 }
 
 .checkbox {
@@ -164,7 +169,6 @@
 
 .check-text {
   display: block;
-  text-overflow: clip;
   color: $primary-text-coor;
 
   @media screen and (max-width: 1199px) {
